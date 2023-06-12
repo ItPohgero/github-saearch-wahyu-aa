@@ -1,38 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Repository ini adalah hasil dari Recruitment Task.
 
-## Getting Started
+Saya menggunakan versi Next.js **13.4.5** dan React **18.2.0** dalam proyek ini.
 
-First, run the development server:
+Berikut beberapa package yang saya gunakan untuk mendukung proyek ini:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Styling:
+Saya menggunakan Tailwind CSS sebagai framework CSS untuk styling aplikasi. Tailwind CSS memungkinkan saya membuat tampilan yang responsif dan menyesuaikan dengan kebutuhan proyek.
+Saya juga menggunakan Mantine.dev components untuk menghemat waktu dalam pembuatan komponen UI. Mantine.dev menyediakan berbagai komponen siap pakai dengan desain yang menarik dan responsif.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. HTTP Requests:
+Saya menggunakan Axios untuk melakukan HTTP requests ke API. Axios adalah library populer dalam JavaScript yang memudahkan dalam mengirim permintaan HTTP ke server dan menangani responsenya.
+Selain itu, saya juga menggunakan SWR (Stale-While-Revalidate) sebagai library untuk caching dan fetching data. SWR membantu dalam mengelola state data yang diambil dari server, memperbarui data secara otomatis, dan mengoptimalkan performa aplikasi.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+3. State Management:
+Untuk manajemen state, saya menggunakan MobX. MobX adalah library yang membantu dalam mengelola state aplikasi dengan mudah dan efisien. Dengan MobX, saya dapat membuat observables, actions, dan reactions untuk mengelola data secara reaktif.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+4. Forms
+Untuk menangani formulir dalam proyek ini, saya menggunakan React Hook Form. React Hook Form adalah library yang ringan dan sederhana untuk mengelola formulir di React dengan menggunakan konsep Hook.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Ini adalah beberapa teknologi dan alat yang saya gunakan dalam proyek Recruitment Task ini. Saya mengambil pendekatan untuk memanfaatkan library dan framework yang populer serta mengoptimalkan penggunaan komponen siap pakai untuk meningkatkan efisiensi dan kualitas pengembangan aplikasi.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Wahyu Agus Arifin -- itpohgero@gmail.com
