@@ -2,6 +2,7 @@ import { userRepository } from '@/api/user';
 import FormInput from '@/components/form/FormInput';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
+import { Accordion } from '@mantine/core'
 
 const Index = () => {
   const { control, getValues, handleSubmit } = useForm();
@@ -33,13 +34,19 @@ const Index = () => {
           <div className='my-2 bg-slate-200 p-2 rounded-lg'>Showing users for {`"${getValues('search')}"`}</div>
         )}
       </form>
-      {data?.items?.map((dt: any, index: number) => {
-        return (
-          <div key={index}>
-            {dt?.login}
-          </div>
-        )
-      })}
+      <Accordion defaultValue="1" transitionDuration={400}>
+        {data?.items?.map((dt: any, index: number) => {
+          return (
+            <div key={index}>
+              <Accordion.Item value={index?.toString()}>
+                <Accordion.Control>{dt?.login}</Accordion.Control>
+                <Accordion.Panel>Configure components appearance and behavior with vast amount of settings or overwrite any part of component styles</Accordion.Panel>
+              </Accordion.Item>
+            </div>
+          )
+        })}
+      </Accordion>
+
     </div>
   )
 }
