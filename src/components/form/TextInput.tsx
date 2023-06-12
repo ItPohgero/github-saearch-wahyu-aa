@@ -13,7 +13,7 @@ const TextInput = forwardRef<
     {...props}
     ref={ref}
     className={classNames(
-      `hover:border-slate-500 ${props.disabled ? "bg-slate-100" : ""} outline-none bg-transparent text-slate-600 font-light text-xs md:text-sm py-2`,
+      `hover:border-slate-500 ${props.disabled ? "bg-slate-100" : ""} outline-none bg-transparent text-slate-600 font-light text-sm py-1 lg:py-2`,
       props.className,
     )}
   />

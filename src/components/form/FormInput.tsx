@@ -38,7 +38,7 @@ const FormInput: FunctionComponent<FormInputProps> = (props) => {
                 control={props.control}
                 name={props.name}
                 rules={props.rules}
-                defaultValue={props.defaultValue}
+                defaultValue={props.defaultValue ?? ''}
                 render={({ field, fieldState: { error } }) => <>
                     <InputLabel htmlFor={props.name}>{props.label}</InputLabel>
                     <div className={`mt-2 flex items-center gap-2 bg-white pl-2 rounded-lg ${!props?.withoutBorder && 'border border-slate-300 focus:border focus:border-sky-500 hover:border-sky-300'}  focus:outline-none text-sm py-2.5 lg:py-1.5 lg:text-lg placeholder:text-xs lg:placeholder:text-sm px-2`}>

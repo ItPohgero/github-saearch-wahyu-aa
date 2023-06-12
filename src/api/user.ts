@@ -4,24 +4,20 @@ import { _http } from "@/configs/_http";
 import useSWR from "swr";
 
 const url = {
-    uriApiExample: () => "xxx",
-    uriHookExample: () => "xxx"
+    uriApiUsers: (q: string) => "search/users?q=" + q,
+    uriApiRepos: (username: string) => `users/${username}/repos`
 };
 
 const api = {
-    Xxx: () => {
-        return _http.post(url.uriApiExample(), null);
+    Users: (e:string) => {
+        return _http.fetcher(url.uriApiUsers(e));
+    },
+    Repos: (e:string) => {
+        return _http.fetcher(url.uriApiUsers(e));
     },
 }
 
-const hooks = {
-    Xxx: () => {
-        return useSWR(url.uriHookExample(), _http?.fetcher);
-    },
-};
-
-export const exampleRepository = {
+export const userRepository = {
     url,
     api,
-    hooks
 };
