@@ -13,7 +13,7 @@ const api = {
         return _http.fetcher(url.uriApiUsers(e));
     },
     Repos: (e:string) => {
-        return _http.fetcher(url.uriApiUsers(e));
+        return _http.fetcher(url.uriApiRepos(e));
     },
 }
 
