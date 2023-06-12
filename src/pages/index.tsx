@@ -60,7 +60,7 @@ const Index = () => {
                   <div className='capitalize font-bold'>{dt?.login}</div>
                 </Accordion.Control>
                 <Accordion.Panel>
-                  {!loadingRepos ? (
+                  {loadingRepos ? (
                     <>
                       {[...Array(4)]?.map((_: any, index: number) => {
                         return (
