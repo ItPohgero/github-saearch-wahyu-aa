@@ -37,8 +37,8 @@ const Index = () => {
   };
   return (
     <div className='max-w-xl mx-auto bg-slate-100 min-h-screen px-4'>
-      <LoadingOverlay visible={loading} overlayBlur={2} />
-      <div className='sticky top-0 pt-4 pb-2 bg-slate-100'>
+      <LoadingOverlay className='min-h-screen fixed top-0 left-0' visible={loading} overlayBlur={2} />
+      <div className='sticky top-0 z-50 pt-4 pb-2 bg-slate-100'>
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormInput
             control={control}
